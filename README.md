@@ -52,10 +52,21 @@ Validates the syntax and internal consistency of the configuration.
 ```
 terraform plan
 ```
-Creates the infrastructure.
-
-
 
 Generates and displays an execution plan, showing what actions Terraform will take.
 
+```
 terraform apply
+```
+Creates the infrastructure.
+
+
+## 4. Validate Ansible Configuration
+
+Run syntax checks before applying the playbook.
+
+```
+cd ansible
+ansible-playbook --syntax-check playbook.yml
+```
+
