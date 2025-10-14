@@ -70,3 +70,48 @@ cd ansible
 ansible-playbook --syntax-check playbook.yml
 ```
 
+What this command does is it verifies the playbook syntax is valid before execution.
+
+## 5. Apply Ansible Playbook
+
+Run the playbook to install and configure nginx on both instances.
+
+```
+ansible-playbook playbook.yml
+```
+
+This executes tasks defined in playbook.yml, including:
+
+Installing nginx
+
+Creating directory structure
+
+Copying configuration files
+
+Generating index.html from template
+
+Reloading and enabling nginx service
+
+## 6. Verify Deployment
+
+Visit one of your server URLs in a web browser
+
+
+```
+http://<public_ip_or_dns>
+```
+
+##7. Cleanup
+ 
+This destroy all created resources and remove the imported AWS key.
+
+```
+cd terraform
+terraform destroy
+```
+This will destroy the EC2 instances, VPC, and related infrastructure.
+
+```
+../delete_lab_key
+```
+The command above will delete our key pair
