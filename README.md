@@ -1,5 +1,7 @@
 # lab-wk-7
 
+### Group Members : Karnveer Basra, Justin Kim, Henry Wong
+
 ## 1. Generate SSH Keys (ed25519)
 
 The command below creates a new SSH key pair named **aws** using the ed25519. 
