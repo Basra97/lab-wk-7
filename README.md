@@ -10,9 +10,9 @@ ssh-keygen -t ed25519 -f ~/.ssh/aws -C "acit4640_lab"
 
 This will generate an ED25519 key pair and store it in
 
-~/.ssh/aws (private key)
+~/.ssh/aws
 
-~/.ssh/aws.pub (public key)
+~/.ssh/aws.pub 
 
 ## 2. Import SSH Key to AWS
 
@@ -101,7 +101,7 @@ Visit one of your server URLs in a web browser
 http://<public_ip_or_dns>
 ```
 
-##7. Cleanup
+## 7. Cleanup
  
 This destroy all created resources and remove the imported AWS key.
 
